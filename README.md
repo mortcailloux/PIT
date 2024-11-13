@@ -31,8 +31,8 @@ Il faut d'abord faire un
 ```bash
 chmod 777 secret/
 ```
-ou quelque chose de similaire pour pouvoir accéder au dossier secret
-ensuite vous faites
+ou quelque chose de similaire pour pouvoir accéder au dossier secret,
+ensuite vous devez faire
 ```bash
 cd secret
 find . -type f -exec grep -l "mot_cherché" {} +
