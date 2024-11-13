@@ -27,9 +27,7 @@ Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'exe
   </summary>
 Il faut d'abord faire un 
 
-  ```javascript
-  console.log("I'm a code block!");
-  ```
+  
 ```bash
 chmod 777 secret/
 ```
