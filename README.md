@@ -5,7 +5,7 @@ Il n'y a aucune permission accordée pour accéder au dossier donc vous allez de
 
 ## Lancer le jeu
 Pour lancer le jeu, rien de plus simple !
-Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'administrateur au préalable !
+Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'execution au préalable !
 
 # Fonctionnement du programme:
 - On crée le dossier secret et on se met toutes les permissions (chmod 700)
@@ -20,4 +20,21 @@ Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'adm
 - On se remet un chmod 700 et on supprime le dossier secret (rm -rf secret)
 
 
-#Solution
+# Solution
+<details>
+  <summary>
+    Spoilers
+  </summary>
+Il faut d'abord faire un 
+```bash
+chmod 777 secret/```
+ou quelque chose de similaire pour pouvoir accéder au dossier secret
+ensuite vous faites
+```bash
+cd secret
+find . -type f -exec grep -l "mot_cherché" {} +
+```
+et vous allez trouver un ou plusieurs fichiers contenant les caractères que vous avez rentré.
+Si seulement un fichier s'affiche, c'est celui qu'il faut rentrer en réponse, sinon vous allez devoir cat chaque fichier pour être sûr qu'il ne contient que le mot que vous cherchez (et pas que le mot que vous cherchez est inclus dans le mot contenu dans le fichier, cela a plus de chances de se produire avec des petits mots).
+  
+</details>
