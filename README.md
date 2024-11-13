@@ -7,7 +7,7 @@ Il n'y a aucune permission accordée pour accéder au dossier donc vous allez de
 Pour lancer le jeu, rien de plus simple !
 Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'execution au préalable !
 
-# Fonctionnement du programme:
+## Fonctionnement du programme:
 - On crée le dossier secret et on se met toutes les permissions (chmod 700)
 - On génère d'abord une liste de mots à partir d'une page HTML qui contient Lorem Ipsum (avec un cURL et en excluant au maximum les balises HTML)
 - On élimine ensuite les doublons des mots en les stockant dans un ensemble
@@ -20,7 +20,7 @@ Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'exe
 - On se remet un chmod 700 et on supprime le dossier secret (rm -rf secret)
 
 
-# Solution
+## Solution
 <details>
   <summary>
     Spoilers
