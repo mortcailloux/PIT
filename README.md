@@ -27,7 +27,8 @@ Ecrivez simplement ./script.sh en n'oubliant pas de donner les permissions d'exe
   </summary>
 Il faut d'abord faire un 
 ```bash
-chmod 777 secret/```
+chmod 777 secret/
+```
 ou quelque chose de similaire pour pouvoir accéder au dossier secret
 ensuite vous faites
 ```bash
